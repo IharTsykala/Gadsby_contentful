@@ -10,7 +10,7 @@ const IndexPage = () => {
       <CssBaseline />
       <Container className={`wrapper`}>
         <Layout>
-          <Typography variant={`overline`}>{`Choose model`}</Typography>
+          <Typography variant={`overline`}>{`Choose location`}</Typography>
         </Layout>
       </Container>
     </>

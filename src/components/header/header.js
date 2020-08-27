@@ -9,11 +9,11 @@ import { Link, graphql, useStaticQuery, navigate } from "gatsby";
 
 const Header = () => {
   const [value, setValue] = React.useState(
-    localStorage.getItem("valueLocation") || "View-All"
+    localStorage.getItem("valueLocation") || ""
   );
-  useEffect(() => {
-    navigate("/locations/view-all");
-  }, []);
+  // useEffect(() => {
+  //   if (!localStorage.getItem("valueLocation")) navigate("/");
+  // }, []);
 
   const response = useStaticQuery(
     graphql`
